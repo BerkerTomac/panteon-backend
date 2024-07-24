@@ -87,4 +87,5 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "3100";
+app.Run("http://0.0.0.0:" + port);
