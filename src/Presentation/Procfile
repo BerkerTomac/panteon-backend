@@ -1,0 +1,1 @@
+web: dotnet panteonbackend.dll --urls=http://+:${PORT}
